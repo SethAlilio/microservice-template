@@ -1,0 +1,37 @@
+#animetion{
+
+    /*transform: translateX(11px) translateY(20px)*/
+    animation-name: example;
+    animation-duration: 10s;
+
+}
+
+.bg_samp{
+    background: url(../../../public/assets/demo/images/fs_bg002.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg_module{
+    background: url(../../../public/assets/demo/images/module_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg_header{
+    background: url(../../../public/assets/demo/images/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+        height: 100%
+    }
+    to {
+        background-color: yellow;
+        height: 0%
+    }
+  }
+

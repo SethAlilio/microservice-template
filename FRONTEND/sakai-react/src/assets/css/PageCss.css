@@ -1,0 +1,357 @@
+ .p-button {
+    /*margin-right: 0.5rem;*/
+    /*margin-right: 0rem;*/
+    margin-right: 0.2rem;
+}
+ .p-buttonset .p-button {
+    margin-right: 0;
+}
+ .template .p-button i {
+    line-height: 2.25rem;
+}
+ .template .p-button.google {
+    background: linear-gradient(to left, var(--purple-600) 50%, var(--purple-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--purple-700);
+}
+ .template .p-button.google:hover {
+    background-position: left bottom;
+}
+ .template .p-button.google i {
+    background-color: var(--purple-700);
+}
+ .template .p-button.google:focus {
+    box-shadow: 0 0 0 1px var(--purple-400);
+}
+ .template .p-button.youtube {
+    background: linear-gradient(to left, var(--pink-600) 50%, var(--pink-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--pink-700);
+}
+ .template .p-button.youtube:hover {
+    background-position: left bottom;
+}
+ .template .p-button.youtube i {
+    background-color: var(--pink-700);
+}
+ .template .p-button.youtube:focus {
+    box-shadow: 0 0 0 1px var(--pink-400);
+}
+ .template .p-button.vimeo {
+    background: linear-gradient(to left, var(--green-200) 50%, var(--green-300) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #000;
+    border-color: var(--green-300);
+}
+ .template .p-button.vimeo:hover {
+    background-position: left bottom;
+}
+ .template .p-button.vimeo i {
+    background-color: var(--green-300);
+}
+ .template .p-button.vimeo:focus {
+    box-shadow: 0 0 0 1px var(--green-400);
+}
+ .template .p-button.facebook {
+    background: linear-gradient(to left, var(--indigo-600) 50%, var(--indigo-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--indigo-700);
+}
+ .template .p-button.facebook:hover {
+    background-position: left bottom;
+}
+ .template .p-button.facebook i {
+    background-color: var(--indigo-700);
+}
+ .template .p-button.facebook:focus {
+    box-shadow: 0 0 0 1px var(--indigo-400);
+}
+ .template .p-button.twitter {
+    background: linear-gradient(to left, var(--blue-400) 50%, var(--blue-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--blue-500);
+}
+ .template .p-button.twitter:hover {
+    background-position: left bottom;
+}
+ .template .p-button.twitter i {
+    background-color: var(--blue-500);
+}
+ .template .p-button.twitter:focus {
+    box-shadow: 0 0 0 1px var(--blue-200);
+}
+ .template .p-button.slack {
+    background: linear-gradient(to left, var(--orange-400) 50%, var(--orange-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--orange-500);
+}
+ .template .p-button.slack:hover {
+    background-position: left bottom;
+}
+ .template .p-button.slack i {
+    background-color: var(--orange-500);
+}
+ .template .p-button.slack:focus {
+    box-shadow: 0 0 0 1px var(--orange-200);
+}
+ .template .p-button.amazon {
+    background: linear-gradient(to left, var(--yellow-400) 50%, var(--yellow-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #000;
+    border-color: var(--yellow-500);
+}
+ .template .p-button.amazon:hover {
+    background-position: left bottom;
+}
+ .template .p-button.amazon i {
+    background-color: var(--yellow-500);
+}
+ .template .p-button.amazon:focus {
+    box-shadow: 0 0 0 1px var(--yellow-200);
+}
+ .template .p-button.discord {
+    background: linear-gradient(to left, var(--bluegray-700) 50%, var(--bluegray-800) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--bluegray-800);
+}
+ .template .p-button.discord:hover {
+    background-position: left bottom;
+}
+ .template .p-button.discord i {
+    background-color: var(--bluegray-800);
+}
+ .template .p-button.discord:focus {
+    box-shadow: 0 0 0 1px var(--bluegray-500);
+}
+ .toolbar-filter{
+     width: 230px;
+ }
+ .toolbar-filter-status{
+     width: 200px;
+ }
+ .lookup-Org-filter{
+     width: 230px;
+ }
+ .ir-dialog{
+     width: 60vw;
+ }
+ .te-dialog, .te-edit-dialog{
+     width: 85vw;
+ }
+ .upload-dialog, .export-ledger-dialog{
+     width: 25vw;
+ }
+ .upload-ledger-dialog, .resources-dialog, .account-list{
+     width: 40vw;
+ }
+ .taskm-update-approver, .resmodule-dialog{
+     width: 30vw;
+ }
+ .legend-dialog, .role-selection, .add-dialog{
+     width: 50vw;
+ }
+ .legend-icons{
+     margin-top: 15px;
+     margin-left: 5px;
+ }
+ .button-permission{
+     width: 80vw;
+ }
+ .account-deets{
+     width: 70vw;
+ }
+ .highlight-row{
+     background: #d70046 !important;
+     color: #ffffff !important;
+ }
+ .highlight-action{
+     color: #ffffff !important;
+ }
+ .hidden-div{
+     padding: 0;
+     height: 10px;
+ }
+ .label-filter{
+     margin-top: 10px;
+ }
+ .filter-multi{
+     max-width: 350px;
+ }
+@media screen and (max-width: 960px) {
+     .p-button {
+        margin-bottom: 0.5rem;
+     }
+     .p-button:not(.p-button-icon-only) {
+        display: flex;
+        width: 100%;
+     }
+     .p-buttonset .p-button {
+        margin-bottom: 0;
+     }
+     .layout-topbar-logo img {
+        max-width: 80px;
+     }
+     .layout-topbar-logo span span{
+        font-size: 8px;
+     }
+     .layout-topbar-logo span{
+        font-size: 7px;
+     }
+     .p-toolbar-group-right{
+         margin-top: 25px;
+         width: 100%;
+         margin-left: 0px;
+     }
+     .toolbar-filter, .toolbar-filter-proj-area, .toolbar-filter-status{
+         width: 300px;
+     }
+    .p-dialog .p-dialog-footer button{
+        display: flex;
+        width: 100%;
+        margin: 0.5rem 0 0.5rem 0;
+     }
+    .lookup-Org-filter{
+        width: 260px;
+     }
+    .p-paginator .p-dropdown{
+        margin-left: 58px;
+    }
+    .layout-topbar-logo{
+        max-width: 250px;
+    }
+    .ir-dialog, .te-dialog, .te-edit-dialog, .add-dialog{
+        width: 100%;
+    }
+    .label-filter{
+        margin-top: 15px;
+    }
+    .upload-dialog, .resources-dialog, .resmodule-dialog, .button-permission, .account-list, .account-deets{
+        width: 100%;
+    }
+    .upload-ledger-dialog, .export-ledger-dialog, .legend-dialog, .role-selection{
+        width: 100%;
+    }
+    .align-items-center{
+        margin-top: 10px;
+    }
+    .taskm-filter{
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+    .taskm-update-approver{
+        width: 100%;
+    }
+    .radio-b{
+        width: 100%;
+    }
+    /*For date damage on IR*/
+    .p-calendar .p-component .p-inputwrapper .p-inputwrapper-filled{
+        width: 100% !important;
+    }
+
+
+
+}
+/* for question icon animation*/
+ .animated {
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+ }
+
+ .animated:hover {
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
+ }
+
+
+
+
+ @-webkit-keyframes tada {
+     0% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+     }
+
+     10%, 20% {
+         -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+         transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+     }
+
+     30%, 50%, 70%, 90% {
+         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+     }
+
+     40%, 60%, 80% {
+         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+     }
+
+     100% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+     }
+ }
+
+ @keyframes tada {
+     0% {
+         -webkit-transform: scale3d(1, 1, 1);
+         -ms-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+     }
+
+     10%, 20% {
+         -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+         -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+         transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+     }
+
+     30%, 50%, 70%, 90% {
+         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+         -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+     }
+
+     40%, 60%, 80% {
+         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+         -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+     }
+
+     100% {
+         -webkit-transform: scale3d(1, 1, 1);
+         -ms-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+     }
+ }
+
+ .tada {
+     -webkit-animation-name: tada;
+     animation-name: tada;
+ }
+
+ /* end of question animation*/
