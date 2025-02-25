@@ -406,9 +406,9 @@ export const AppMenu = (props) => {
                 <div className="user-info-block mt-1">
                     <a href="#" onClick={()=>{
                         displayPasswordChangeSet(true);
-                        setUserDetails({
+                        /* setUserDetails({
                             CREATED_BY_ID: userInfo.ACCOUNT_ID,
-                            CREATED_BY_NAME: userInfo.FULL_NAME});
+                            CREATED_BY_NAME: userInfo.FULL_NAME}); */
                     }}>change password</a>
                 </div>
             </div>
