@@ -393,4 +393,17 @@
         from widget_permission_legend;
     </select>
 
+    <delete id="deleteResource" parameterType="Integer">
+        DELETE FROM resources
+        WHERE RESOURCES_ID = #{id}
+            OR PARENT_ID = #{id}
+    </delete>
+
+    <delete id="deleteRoleResourceByResourceId" parameterType="Integer">
+        DELETE rr FROM role_resource rr
+        INNER JOIN resources r ON r.RESOURCES_ID = rr.RESOURCES_ID
+        WHERE r.RESOURCES_ID = #{resourceId}
+            OR r.PARENT_ID = #{resourceId}
+    </delete>
+
 </mapper>

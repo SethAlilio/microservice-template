@@ -65,4 +65,7 @@ public interface RoleRepository {
 
     List<Map> getWidgeLegend();
 
+    void deleteResource(Integer id);
+    void deleteRoleResourceByResourceId(Integer resourceId);
+
 }

@@ -15,6 +15,18 @@ public class ResultMsg<T> {
         setSuccess(true);
     }
 
+    public ResultMsg<T> success(String message){
+        this.success = true;
+        this.message = message;
+        return this;
+    }
+
+    public ResultMsg<T> failure(String message){
+        this.success = false;
+        this.message = message;
+        return this;
+    }
+
     public ResultMsg(String message) {
         setSuccess(true);
         this.message = message;
@@ -35,6 +47,5 @@ public class ResultMsg<T> {
         this.message = message;
         this.data = data;
     }
-
 
 }

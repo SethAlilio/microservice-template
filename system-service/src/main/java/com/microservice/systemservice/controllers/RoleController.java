@@ -4,6 +4,7 @@ import com.code.share.codesharing.tools.Utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microservice.systemservice.models.GetResponse;
 import com.microservice.systemservice.models.OrgClass;
+import com.microservice.systemservice.models.ResultMsg;
 import com.microservice.systemservice.repository.RoleRepository;
 import com.microservice.systemservice.repository.SystemRepository;
 import com.microservice.systemservice.utils.Util;
@@ -484,6 +485,17 @@ public class RoleController {
                 roleRepository.AddNewWidgePermByUser(widgeMap);
             }
             //
+        }
+    }
+
+    @PostMapping("/deleteResource")
+    public ResultMsg<?> deleteResource(@RequestParam Integer id) {
+        try {
+            roleRepository.deleteRoleResourceByResourceId(id);
+            roleRepository.deleteResource(id);
+            return new ResultMsg<>().success("Resource deleted");
+        } catch (Exception e) {
+            return new ResultMsg<>().failure("Failed to delete resource");
         }
     }
 }
