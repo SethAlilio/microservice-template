@@ -18,10 +18,7 @@ import org.springframework.util.ObjectUtils;
 import com.microservice.systemservice.services.ActivityLogService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
@@ -102,6 +99,22 @@ public class RoleController {
         if(!map.containsKey("PARENTID")){
             map.put("PARENTID", null);
             map.put("TYPE_", "1");
+
+            OptionalInt maxSort = resResources.stream()
+                    .filter(x -> x.get("SORT") != null)
+                    .map(x -> {
+                        String sortValue = (String) x.get("SORT");
+                        try {
+                            return Integer.parseInt(sortValue);
+                        } catch (NumberFormatException e) {
+                            return null;
+                        }
+                    })
+                    .filter(Objects::nonNull)
+                    .mapToInt(Integer::intValue)
+                    .max();
+
+            map.put("SORT", maxSort.isPresent() ? maxSort.getAsInt() + 1 : 1);
 
             //
             List<Map> selParentResc = resResources.stream().filter(mapp -> mapp.get("TYPE_").toString().equals("1"))

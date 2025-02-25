@@ -427,7 +427,7 @@ const Home = () => {
 // TE-LEDGER EXPORT FUNCTION
     const exportFunctionUniversal = (dataListVar) => {
         //debugger;
-        toast.current.show({severity:'info', summary: 'System Info', detail:"Populating data into excel.", life: 1500});
+        /* toast.current.show({severity:'info', summary: 'System Info', detail:"Populating data into excel.", life: 1500});
         //loadingProgressSet('block');
         if(exportTELedgerDataCancelToken){
             exportTELedgerDataCancelToken.cancel("Request Cancel")
@@ -450,7 +450,7 @@ const Home = () => {
             sleep(1500).then(() => {
                 toast.current.show({severity:'success', summary: 'System Info', detail:"The data export was successful.", life: 1500});
             })
-        })
+        }) */
     }
 
     const sleep = (ms) => new Promise(
